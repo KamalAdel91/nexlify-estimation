@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-05-21 17:58:29.497660",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "nexlify_estimation_customer_name",
+  "nexlify_estimation_company_name",
+  "column_break_mibe",
+  "nexlify_estimation_opportunity",
+  "nexlify_estimation_opportunity_date",
+  "column_break_mtev",
+  "naming_series",
+  "nexlify_estimation_date",
+  "section_break_iazt",
+  "nexlify_estimation_opportunity_rfq_html",
+  "section_break_vkpr",
+  "nexlify_estimation_tasks_table",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fetch_from": "nexlify_estimation_opportunity.customer_name",
+   "fieldname": "nexlify_estimation_customer_name",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "nexlify_estimation_opportunity.company",
+   "fieldname": "nexlify_estimation_company_name",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_mibe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nexlify_estimation_opportunity",
+   "fieldtype": "Link",
+   "label": "Opportunity",
+   "options": "Opportunity"
+  },
+  {
+   "fetch_from": "nexlify_estimation_opportunity.transaction_date",
+   "fieldname": "nexlify_estimation_opportunity_date",
+   "fieldtype": "Date",
+   "label": "Opportunity Date",
+   "options": "Opportunity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_mtev",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_iazt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "nexlify_estimation_opportunity_rfq_html",
+   "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "nexlify_estimation_date",
+   "fieldtype": "Date",
+   "label": "Estimation Date"
+  },
+  {
+   "fieldname": "section_break_vkpr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "nexlify_estimation_tasks_table",
+   "fieldtype": "Table",
+   "label": "Estimation Tasks",
+   "options": "Project Estimation Tasks"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "EST-.YYYY.-.#####."
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Project Estimation",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-05-22 18:36:05.495121",
+ "modified_by": "Administrator",
+ "module": "Nexlify Estimation",
+ "name": "Project Estimation",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

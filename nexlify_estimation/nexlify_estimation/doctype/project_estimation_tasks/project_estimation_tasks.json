@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "format:{nexlify_estimation_task}-{parent}",
+ "creation": "2026-05-21 18:09:31.644900",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nexlify_estimation_rfq_item",
+  "nexlify_estimation_task",
+  "nexlify_estimation_qty",
+  "nexlify_estimation_hours"
+ ],
+ "fields": [
+  {
+   "fieldname": "nexlify_estimation_rfq_item",
+   "fieldtype": "Select",
+   "label": "RFQ Item"
+  },
+  {
+   "fieldname": "nexlify_estimation_task",
+   "fieldtype": "Data",
+   "label": "Task"
+  },
+  {
+   "fieldname": "nexlify_estimation_qty",
+   "fieldtype": "Float",
+   "label": "QTY"
+  },
+  {
+   "fieldname": "nexlify_estimation_hours",
+   "fieldtype": "Float",
+   "label": "Hours"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-05-22 05:18:33.198382",
+ "modified_by": "kamal.adel@alsadara.com",
+ "module": "Nexlify Estimation",
+ "name": "Project Estimation Tasks",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

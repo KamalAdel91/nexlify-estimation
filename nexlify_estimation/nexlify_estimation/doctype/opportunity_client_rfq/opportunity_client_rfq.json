@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-05-21 18:15:59.770305",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nexlify_estimation_opportunity_rfq_item",
+  "nexlify_estimation_opportunity_rfq_description",
+  "nexlify_estimation_opportunity_rfq_uom",
+  "nexlify_estimation_opportunity_rfq_quantity"
+ ],
+ "fields": [
+  {
+   "fieldname": "nexlify_estimation_opportunity_rfq_item",
+   "fieldtype": "Data",
+   "label": "Item"
+  },
+  {
+   "fieldname": "nexlify_estimation_opportunity_rfq_description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "nexlify_estimation_opportunity_rfq_uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "nexlify_estimation_opportunity_rfq_quantity",
+   "fieldtype": "Float",
+   "label": "Quantity"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-05-21 18:17:26.078915",
+ "modified_by": "Administrator",
+ "module": "Nexlify Estimation",
+ "name": "Opportunity Client RFQ",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
