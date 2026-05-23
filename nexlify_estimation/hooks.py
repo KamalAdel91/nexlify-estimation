@@ -5,19 +5,28 @@ app_description = "Estimation Engine for ERPNext"
 app_email = "Kamal.adel@outlook.com"
 app_license = "mit"
 
-# ربط ملف الجافاسكريبت بصفحة التقديرات
 doctype_js = {
     "Project Estimation": "public/js/estimation_controller.js"
 }
-
 
 export_python_type_annotations = True
 require_type_annotated_api_methods = True
 
 fixtures = [
-    {"doctype": "Custom Field"},
-    {"doctype": "Property Setter"},
-    {"doctype": "Client Script"},
-    {"doctype": "Server Script"},
-
+    {
+        "doctype": "Custom Field",
+        "filters": [["module", "=", "Nexlify Estimation"]]
+    },
+    {
+        "doctype": "Server Script",
+        "filters": [["module", "=", "Nexlify Estimation"]]
+    },
+    {
+        "doctype": "Client Script",
+        "filters": [["module", "=", "Nexlify Estimation"]]
+    },
+    {
+        "doctype": "Property Setter",
+        "filters": [["module", "=", "Nexlify Estimation"]]
+    }
 ]
