@@ -20,18 +20,19 @@ function load_opportunity_rfq(frm) {
         return;
     }
 
-    frappe.db.get_doc('Opportunity', opp).then(doc => {
-        let items = doc.nexlify_rfq_table || []; 
-        
-        // 1. تحديث وعرض جدول الـ HTML المعرب والمتوافق مع الثيمات
-        let html = build_rfq_table(items);
-        frm.set_df_property(html_field, 'options', html);
-
-        // 2. استخراج الأصناف الفريدة لتحديث القائمة المنسدلة في الجدول الفرعي
-        let options = items.map(i => i.nexlify_estimation_opportunity_rfq_item).filter(Boolean);
-        options = [...new Set(options)];
-        
-        update_grid_options(frm, options);
+    frappe.call({
+        method: 'nexlify_estimation.nexlify_estimation.doctype.project_estimation.project_estimation.get_opportunity_rfq_items',
+        args: { opportunity: opp },
+        callback: function(r) {
+            let items = r.message || [];
+            let html = build_rfq_table(items);
+            frm.set_df_property(html_field, 'options', html);
+            let options = items.map(function(i) {
+                return i.nexlify_estimation_opportunity_rfq_item;
+            }).filter(Boolean);
+            options = [...new Set(options)];
+            update_grid_options(frm, options);
+        }
     });
 }
 
