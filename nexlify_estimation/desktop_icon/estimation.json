@@ -1,0 +1,23 @@
+{
+ "app": "nexlify_estimation",
+ "bg_color": "blue",
+ "creation": "2026-05-31 08:31:07.459364",
+ "docstatus": 0,
+ "doctype": "Desktop Icon",
+ "hidden": 0,
+ "icon_image": "/files/Estimation.png",
+ "icon_type": "Link",
+ "idx": 0,
+ "label": "Estimation",
+ "link_to": "Estimation",
+ "link_type": "Workspace Sidebar",
+ "logo_url": "/files/Estimation.png",
+ "modified": "2026-05-31 08:31:20.245279",
+ "modified_by": "Administrator",
+ "name": "Estimation",
+ "owner": "Administrator",
+ "restrict_removal": 0,
+ "roles": [],
+ "sidebar": "Estimation",
+ "standard": 1
+}
